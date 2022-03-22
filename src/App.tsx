@@ -5,7 +5,7 @@ import "./App.css";
 
 const App = () => {
   let { error, dataLoading, data } = useFetch(
-    "http://www.omdbapi.com/?i=tt3896198&apikey=740a39d"
+    "https://www.omdbapi.com/?i=tt3896198&apikey=740a39d"
   );
 
   useEffect(() => {
