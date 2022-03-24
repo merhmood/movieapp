@@ -14,11 +14,8 @@ function useFetch(apiAddress: string) {
       .get(apiAddress)
       .then((data) => {
         //due to insufficient data, data was duplicated
-        interface DataObject {
-          Title: string;
-        }
         const setValue = [];
-        const dataObject: DataObject = { Title: data.data.Title };
+        const dataObject: DataInterface = { Title: data.data.Title };
 
         for (let i = 0; i < 10; i++) {
           setValue.push(dataObject);
