@@ -21,7 +21,7 @@ function useFetch(apiAddress: string) {
           setValue.push(dataObject);
         }
         console.log(setValue);
-        if (setValue !== []) {
+        if (setValue.length !== 0) {
           setData(setValue);
         }
       })
